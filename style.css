@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,300&display=swap');
+
+/* 
+colors and font styles
+    dark bg color (hero/footer):            #1F2937
+    hero main text:                         48px extra-bold #F9FAF8
+    hero secondary text/header link tex:    18px #E5E7EB
+    header logo text:                       24px #F9FAF8
+    button color, call to action bg:        #3882F6
+    information header text:                36px extra-bold #1F2937
+    quote section bg:                       #E5E7EB
+    quote text:                             36px light italic #1F2937
+*/
+
+:root {
+    --dark-color: #1F2937;
+    --bright-text: #F9FAF8;
+    --primary-color: #3882F6;
+    --bright-primary-color: #5febfd;
+    --light-text-color: #E5E7EB;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-text-color);
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+button {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 32px;
+    align-self: center;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2, 1fr;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark-color);
+    padding: 10px 16px;
+}
+
+.navbar .container {
+    justify-content: space-between;
+    margin: auto;
+}
+
+.logo {
+    color: var(--bright-text);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar a:hover {
+    color: var(--bright-primary-color);
+}
+
+/* Hero */
+.hero {
+    background-color: var(--dark-color);
+    color: var(--bright-text);
+    padding: 32px 0 64px 0;
+}
+
+.hero .container {
+    justify-content: space-between;
+}
+
+.image-card {
+    width: 40%;
+}
+
+.hero img {
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero-card {
+    flex-shrink: 1;
+    width: 50%;
+    margin-right: 10px;
+}
+
+.hero-card > *:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.image-card {
+    flex-shrink: 2;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero-sub-text,
+.hero a {
+    font-size: 18px;
+}
+
+/* Meet your reps */
+.house-leaders {
+    padding: 32px 0 64px 0;
+}
+.overtext {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: 36px;
+    color: var(--dark-color)
+}
+
+.rep-images {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.image-text-pair {
+    text-align: center;
+    width: 200px;
+    color: var(--dark-color)
+}
+
+.rep-images img {
+    width: 150px;
+    border: 2px solid var(--dark-color);
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+/* Famous Quote */
+.famous-quote {
+    padding: 120px 64px;
+    margin: auto;
+    background-color: var(--light-text-color);
+}
+
+.famous-quote blockquote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.quote-author {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: end;
+}
+
+/* Contact your MP */
+.find-your-MP {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 36px;
+    border-radius: 8px;
+    margin: 48px auto;
+    justify-content: space-around;
+}
+
+.find-your-MP .left-half {
+    margin-right: 16px;
+}
+
+.find-your-MP button {
+    border-radius: 8px;
+    border: 2px solid var(--light-text-color);
+    white-space: nowrap;
+}
+
+.find-your-MP button a {
+    font-weight: bold;
+}
+
+.find-your-MP h2,{
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--bright-text);
+    padding: 24px;
+    text-align: center;
+}
+
+footer a {
+    color: var(--bright-primary-color);
+}
+
+footer .small-text {
+    margin-top: 8px;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Media Query */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .hero .hero-card,
+    .hero .image-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .famous-quote blockquote {
+        font-size: 24px;
+    }
+
+    p.quote-author {
+        text-align: center;
+        font-size: 16px;
+    }
+}

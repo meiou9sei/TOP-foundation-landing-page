@@ -5,92 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The House of Cards</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navbar -->
     <div class="navbar">
-        <div class="logo">
-            <h1>The House of Cards</h1>
+        <div class="container flex">
+            <div class="logo">
+                <h1>The House of Cards</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Members</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Members</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
     </div>
 
     <!-- Main -->
-    <div class="main-container">
-
-        <!-- Introduction -->
-        <section class="container hero-text">
-            <div class="card">
-                <h2>The House of Cards</h2>
-                <p>The House of Cards is the legislative branch of the 
+    <!-- Hero -->
+    <div class="hero flex">
+        <section class="container flex">
+            <div class="card hero-card">
+                <h2 class="hero-main-text">The House of Cards</h2>
+                <p class ="hero-sub-text">The House of Cards is the legislative branch of the 
                     United Federation of Cards. We debate and write laws with the aim to 
                     improve the lives of Playing Cards within the framework set by the 
                     Constitution and the Treaty of Paris.</p>
                 <button><a href="#0">Learn More</a></button>
             </div>
-            <div class="card">
+            <div class="card image-card">
                 <img src="images/cards.jpeg" alt="The House of Cards in a debate session">
             </div>
         </div>
-        
-        <!-- Meet your Reps -->
-        <section class="container house-leaders">
-            <h2 class="overtext">Meet your Representatives</h2>
-            <div class="rep-images">
-                <div class="image-text-pair">
-                    <img src="images/PNG-cards-1.3/king_of_hearts2.png" alt="Prime Minister King (H)">
-                    <p>Prime Minister King (H)</p>
-                </div>
-                <div class="image-text-pair">
-                    <img src="images/PNG-cards-1.3/queen_of_spades2.png" alt="Commons Speaker Queen (C)">
-                    <p>Commons Speaker Queen (C)</p>
-                </div>
-                <div class="image-text-pair">
-                    <img src="images/PNG-cards-1.3/jack_of_hearts2.png" alt="Lord Speaker Jack (H)">
-                    <p>Lord Speaker Jack (H)</p>
-                </div>
-                <div class="image-text-pair">
-                    <img src="images/PNG-cards-1.3/black_joker.png" alt="Leader of the Opposition Joker (BC)">
-                    <p>Leader of the Opposition Joker (BC)</p>
-                </div>
+    
+    <!-- Meet your Reps -->
+    <section class="house-leaders">
+        <h2 class="overtext">Meet your Representatives</h2>
+        <div class="rep-images flex">
+            <div class="image-text-pair">
+                <img src="images/PNG-cards-1.3/king_of_hearts2.png" alt="Prime Minister King (H)">
+                <p>Prime Minister King (H)</p>
             </div>
-        </section>
-        
-        <!-- Inspiration Quote -->
-        <section class="container famous-quote">
+            <div class="image-text-pair">
+                <img src="images/PNG-cards-1.3/queen_of_spades2.png" alt="Commons Speaker Queen (C)">
+                <p>Commons Speaker Queen (C)</p>
+            </div>
+            <div class="image-text-pair">
+                <img src="images/PNG-cards-1.3/jack_of_hearts2.png" alt="Lord Speaker Jack (H)">
+                <p>Lord Speaker Jack (H)</p>
+            </div>
+            <div class="image-text-pair">
+                <img src="images/PNG-cards-1.3/black_joker.png" alt="Leader of the Opposition Joker (BC)">
+                <p>Leader of the Opposition Joker (BC)</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Inspiration Quote -->
+    <section class="famous-quote flex">
+        <div class="container">
             <blockquote cite="https://www.pbs.org/newshour/show/barack-obamas-keynote-address-at-the-2004-democratic-national-convention">"Well,
-                 I say to them tonight, there's not a red Card and a black Card - 
-                 there's the United Federation of Cards! There's not a diamond Card and
-                  clubs Card and hearts Card and spades Card; there's the \
-                  United Federation of Cards!"</blockquote>
+                    I say to them tonight, there's not a red Card and a black Card - 
+                    there's the United Federation of Cards! There's not a diamond Card and
+                    clubs Card and hearts Card and spades Card; there's the 
+                    United Federation of Cards!"</blockquote>
             <p class="quote-author">- First Prime Minister the Ace of Spades</p>
-        </section>
-        
-        <!-- Contact your MP -->
-        <section class="container find-your-MP">
-            <div class="left-half">
-                <h2>Have a concern? Find your MP!</h2>
-                <p>See our Members page to learn more about your constituency's representative or to contact them.</p>
-            </div>
-            <div class="right-half">
-                <button><a href="#0">Find your MP</a></button>
-            </div>
-        </section>
+        </div>    
+    </section>
+    
+    <!-- Contact your MP -->
+    <section class="find-your-MP container flex">
+        <div class="left-half">
+            <h2>Have a concern? Find your MP!</h2>
+            <p>See our Members page to learn more about your constituency's representative or to contact them.</p>
+        </div>
+        <div class="right-half">
+            <button><a href="#0">Find your MP</a></button>
+        </div>
+    </section>
 
-
-    </div>
 
     <!-- Footer -->
-    <p>Webpage created by meiousei9 as part of The Odin Project foundations course.</p>
-    <p>See the code for this webpage.</p>
-    <p>&copy; 2022 United Federation of Cards</p>
+    <footer>
+        <p>Webpage created by <a href="href="https://github.com/meiousei9"">meiousei9</a> as part of <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/landing-page">The Odin Project foundations course</a>.</p>
+        <p>See <a href="https://github.com/meiousei9/TOP-foundation-landing-page">the code</a> for this webpage.</p>
+        <p class="small-text">&copy; 2022 United Federation of Cards</p>
+    </footer>
 
 
 </body>
